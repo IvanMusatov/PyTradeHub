@@ -1,0 +1,26 @@
+[
+    {
+        "model": "catalog.product",
+        "pk": 1,
+        "fields": {
+            "name_product": "Бот оплаты",
+            "description": "Бот, к которому не подключена функция взимания платы",
+            "category": 2,
+            "purchase_price": 10.99,
+            "date_creation": "2023-08-07",
+            "date_modified": "2023-08-07"
+        }
+    },
+    {
+        "model": "catalog.product",
+        "pk": 2,
+        "fields": {
+            "name_product": "Лендинг",
+            "description": "Создание сайта из одной страницы",
+            "category": 3,
+            "purchase_price": 19.99,
+            "date_creation": "2023-08-07",
+            "date_modified": "2023-08-07"
+        }
+    }
+]
