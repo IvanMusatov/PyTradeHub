@@ -1,8 +1,10 @@
 <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom box-shadow">
-    <h5 class="my-0 mr-md-auto font-weight-normal">PyTradeHub</h5>
-    <nav class="ms-5">
+    <h5 class="my-0 me-md-auto font-weight-normal">PyTradeHub
         <a class="p-2 btn btn-outline-primary" href="{% url 'product_detail' pk=1 %}">Каталог</a>
         <a class="p-2 btn btn-outline-primary" href="/contacts/">Контакты</a>
         <a class="p-2 btn btn-outline-primary" href="/blogpost_list/">Блог</a>
+    </h5>
+    <nav class="ms-auto">
+        <a class="p-2 btn btn-outline-primary" href="{% url 'home' %}">Домой</a>
     </nav>
 </div>
