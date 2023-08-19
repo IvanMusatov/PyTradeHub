@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h1>{{ post.title }}</h1>
+  <p>{{ post.content }}</p>
+
+  {% if post.preview %}
+    <img src="{{ post.preview.url }}" alt="{{ post.title }} Preview">
+  {% endif %}
+
+  {% if post.published %}
+    <p>Published</p>
+    <a href="{% url 'blogpost_update' post.pk %}">Редактировать</a>
+  {% else %}
+    <p>Not published</p>
+  {% endif %}
+
+  <p>Views: {{ post.views }}</p>
+{% endblock %}

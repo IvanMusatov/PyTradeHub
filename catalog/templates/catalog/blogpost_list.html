@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h1>Публикации</h1>
+
+  <ul>
+    {% for post in posts %}
+      <li>
+        <a href="{% url 'blogpost_detail' post.pk %}">{{ post.title }}</a>
+        {% if post.published %}
+          (Published)
+        {% else %}
+          (Not published)
+        {% endif %}
+        <a href="{% url 'blogpost_delete' post.pk %}">Удалить</a>
+      </li>
+    {% endfor %}
+  </ul>
+  
+  <a href="{% url 'blogpost_create' %}">Создать публикацию</a>
+{% endblock %}
